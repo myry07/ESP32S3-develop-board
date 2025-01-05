@@ -1,1 +1,1 @@
-# ESP32S3-miniSystem-Board
+# ESP32S3-Minimal-System-Board
