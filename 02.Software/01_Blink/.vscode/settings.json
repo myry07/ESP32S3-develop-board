@@ -1,6 +1,0 @@
-{
-    "idf.port": "/dev/tty.wchusbserial10",
-    "idf.openOcdConfigs": [
-        "board/esp32s3-builtin.cfg"
-    ]
-}
