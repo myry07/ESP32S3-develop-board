@@ -2,6 +2,7 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "driver/gpio.h" //操作gpio的头文件
+#include "esp_log.h"
 
 #define LED_GPIO GPIO_NUM_2
 
@@ -14,11 +15,24 @@ void ledFlash(void *param)
         gpio_level = gpio_level ? 0 : 1;
         gpio_set_level(LED_GPIO, gpio_level);
         vTaskDelay(pdMS_TO_TICKS(500)); // 500ms
+
+        if (gpio_level == 0)
+        {
+            ESP_LOGI("main", "turn off");
+        }
+        else
+        {
+            ESP_LOGI("main", "turn on");
+        }
     }
 }
 
 void app_main(void)
 {
+
+    // 设置日志级别为 INFO
+    esp_log_level_set("*", ESP_LOG_INFO);
+    
     // GPIO配置
     gpio_config_t led_cfg = {
         .pin_bit_mask = (1 << LED_GPIO),       // 按位掩码 可控制多个gpio

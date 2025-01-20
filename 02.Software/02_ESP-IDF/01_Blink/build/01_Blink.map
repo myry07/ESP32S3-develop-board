@@ -17426,7 +17426,7 @@ LOAD /Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-
                                   0x8 (size before relaxing)
  .literal.app_main
                 0x400d0714        0xc esp-idf/main/libmain.a(01_Blink.c.obj)
-                                 0x1c (size before relaxing)
+                                 0x20 (size before relaxing)
  .literal.gpio_input_disable
                 0x400d0720       0x1c esp-idf/esp_driver_gpio/libesp_driver_gpio.a(gpio.c.obj)
                                  0x24 (size before relaxing)
