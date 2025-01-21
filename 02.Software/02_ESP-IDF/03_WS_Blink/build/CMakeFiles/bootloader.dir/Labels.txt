@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/03_WS_Blink/build/CMakeFiles/bootloader
+/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/03_WS_Blink/build/CMakeFiles/bootloader.rule
+/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/03_WS_Blink/build/CMakeFiles/bootloader-complete.rule
+/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/03_WS_Blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/03_WS_Blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/03_WS_Blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/03_WS_Blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/03_WS_Blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/03_WS_Blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/03_WS_Blink/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

@@ -1,0 +1,504 @@
+2ɕ�� 160000000 �ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x38 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan 21 2025 22:43:25[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0bc10h ( 48144) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001bc38 vaddr=3fc93a00 size=02cfch ( 11516) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001e93c vaddr=40374000 size=016dch (  5852) load[0m
+[0;32mI (105) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b620h (112160) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003b648 vaddr=403756dc size=0e240h ( 57920) load[0m
+[0;32mI (143) esp_image: segment 5: paddr=00049890 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (150) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (150) boot: Disabling RNG early entropy source...[0m
+[0;32mI (161) cpu_start: Multicore app[0m
+[0;32mI (170) cpu_start: Pro cpu start user code[0m
+[0;32mI (170) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (170) app_init: Application information:[0m
+[0;32mI (170) app_init: Project name:     03_WS_Blink[0m
+[0;32mI (175) app_init: App version:      120e481-dirty[0m
+[0;32mI (179) app_init: Compile time:     Jan 21 2025 22:43:18[0m
+[0;32mI (184) app_init: ELF file SHA256:  ebd63bee1...[0m
+[0;32mI (188) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (192) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (210) heap_init: At 3FC96FD8 len 00052738 (329 KiB): RAM[0m
+[0;32mI (215) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (220) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (225) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: boya[0m
+[0;32mI (234) spi_flash: flash io: dio[0m
+[0;33mW (237) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (256) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (283) main_task: Calling app_main()[0m
+[0;32mI (283) WS: LED init![0m
+[0;32mI (283) WS: Turning the LED OFF![0m
+[0;32mI (1283) WS: Turning the LED ON![0m
+[0;32mI (2283) WS: Turning the LED OFF![0m
+[0;32mI (3283) WS: Turning the LED ON![0m
+[0;32mI (4283) WS: Turning the LED OFF![0m
+[0;32mI (5283) WS: Turning the LED ON![0m
+[0;32mI (6283) WS: Turning the LED OFF![0m
+[0;32mI (7283) WS: Turning the LED ON![0m
+[0;32mI (8283) WS: Turning the LED OFF![0m
+[0;32mI (9283) WS: Turning the LED ON![0m
+[0;32mI (10283) WS: Turning the LED OFF![0m
+[0;32mI (11283) WS: Turning the LED ON![0m
+[0;32mI (12283) WS: Turning the LED OFF![0m
+[0;32mI (13283) WS: Turning the LED ON![0m
+[0;32mI (14283) WS: Turning the LED OFF![0m
+[0;32mI (15283) WS: Turning the LED ON![0m
+[0;32mI (16283) WS: Turning the LED OFF![0m
+[0;32mI (17283) WS: Turning the LED ON![0m
+[0;32mI (18283) WS: Turning the LED OFF![0m
+[0;32mI (19283) WS: Turning the LED ON![0m
+[0;32mI (20283) WS: Turning the LED OFF![0m
+[0;32mI (21283) WS: Turning the LED ON![0m
+[0;32mI (22283) WS: Turning the LED OFF![0m
+[0;32mI (23283) WS: Turning the LED ON![0m
+[0;32mI (24283) WS: Turning the LED OFF![0m
+[0;32mI (25283) WS: Turning the LED ON![0m
+[0;32mI (26283) WS: Turning the LED OFF![0m
+[0;32mI (27283) WS: Turning the LED ON![0m
+[0;32mI (28283) WS: Turning the LED OFF![0m
+[0;32mI (29283) WS: Turning the LED ON![0m
+[0;32mI (30283) WS: Turning the LED OFF![0m
+[0;32mI (31283) WS: Turning the LED ON![0m
+[0;32mI (32283) WS: Turning the LED OFF![0m
+[0;32mI (33283) WS: Turning the LED ON![0m
+[0;32mI (34283) WS: Turning the LED OFF![0m
+[0;32mI (35283) WS: Turning the LED ON![0m
+[0;32mI (36283) WS: Turning the LED OFF![0m
+[0;32mI (37283) WS: Turning the LED ON![0m
+[0;32mI (38283) WS: Turning the LED OFF![0m
+[0;32mI (39283) WS: Turning the LED ON![0m
+[0;32mI (40283) WS: Turning the LED OFF![0m
+[0;32mI (41283) WS: Turning the LED ON![0m
+[0;32mI (42283) WS: Turning the LED OFF![0m
+[0;32mI (43283) WS: Turning the LED ON![0m
+[0;32mI (44283) WS: Turning the LED OFF![0m
+[0;32mI (45283) WS: Turning the LED ON![0m
+[0;32mI (46283) WS: Turning the LED OFF![0m
+[0;32mI (47283) WS: Turning the LED ON![0m
+[0;32mI (48283) WS: Turning the LED OFF![0m
+[0;32mI (49283) WS: Turning the LED ON![0m
+[0;32mI (50283) WS: Turning the LED OFF![0m
+[0;32mI (51283) WS: Turning the LED ON![0m
+[0;32mI (52283) WS: Turning the LED OFF![0m
+[0;32mI (53283) WS: Turning the LED ON![0m
+[0;32mI (54283) WS: Turning the LED OFF![0m
+[0;32mI (55283) WS: Turning the LED ON![0m
+[0;32mI (56283) WS: Turning the LED OFF![0m
+[0;32mI (57283) WS: Turning the LED ON![0m
+[0;32mI (58283) WS: Turning the LED OFF![0m
+[0;32mI (59283) WS: Turning the LED ON![0m
+[0;32mI (60283) WS: Turning the LED OFF![0m
+[0;32mI (61283) WS: Turning the LED ON![0m
+[0;32mI (62283) WS: Turning the LED OFF![0m
+[0;32mI (63283) WS: Turning the LED ON![0m
+[0;32mI (64283) WS: Turning the LED OFF![0m
+[0;32mI (65283) WS: Turning the LED ON![0m
+[0;32mI (66283) WS: Turning the LED OFF![0m
+[0;32mI (67283) WS: Turning the LED ON![0m
+[0;32mI (68283) WS: Turning the LED OFF![0m
+[0;32mI (69283) WS: Turning the LED ON![0m
+[0;32mI (70283) WS: Turning the LED OFF![0m
+[0;32mI (71283) WS: Turning the LED ON![0m
+[0;32mI (72283) WS: Turning the LED OFF![0m
+[0;32mI (73283) WS: Turning the LED ON![0m
+[0;32mI (74283) WS: Turning the LED OFF![0m
+[0;32mI (75283) WS: Turning the LED ON![0m
+[0;32mI (76283) WS: Turning the LED OFF![0m
+[0;32mI (77283) WS: Turning the LED ON![0m
+[0;32mI (78283) WS: Turning the LED OFF![0m
+[0;32mI (79283) WS: Turning the LED ON![0m
+[0;32mI (80283) WS: Turning the LED OFF![0m
+[0;32mI (81283) WS: Turning the LED ON![0m
+[0;32mI (82283) WS: Turning the LED OFF![0m
+[0;32mI (83283) WS: Turning the LED ON![0m
+[0;32mI (84283) WS: Turning the LED OFF![0m
+[0;32mI (85283) WS: Turning the LED ON![0m
+[0;32mI (86283) WS: Turning the LED OFF![0m
+[0;32mI (87283) WS: Turning the LED ON![0m
+[0;32mI (88283) WS: Turning the LED OFF![0m
+[0;32mI (89283) WS: Turning the LED ON![0m
+[0;32mI (90283) WS: Turning the LED OFF![0m
+[0;32mI (91283) WS: Turning the LED ON![0m
+[0;32mI (92283) WS: Turning the LED OFF![0m
+[0;32mI (93283) WS: Turning the LED ON![0m
+[0;32mI (94283) WS: Turning the LED OFF![0m
+[0;32mI (95283) WS: Turning the LED ON![0m
+[0;32mI (96283) WS: Turning the LED OFF![0m
+[0;32mI (97283) WS: Turning the LED ON![0m
+[0;32mI (98283) WS: Turning the LED OFF![0m
+[0;32mI (99283) WS: Turning the LED ON![0m
+[0;32mI (100283) WS: Turning the LED OFF![0m
+[0;32mI (101283) WS: Turning the LED ON![0m
+[0;32mI (102283) WS: Turning the LED OFF![0m
+[0;32mI (103283) WS: Turning the LED ON![0m
+[0;32mI (104283) WS: Turning the LED OFF![0m
+[0;32mI (105283) WS: Turning the LED ON![0m
+[0;32mI (106283) WS: Turning the LED OFF![0m
+[0;32mI (107283) WS: Turning the LED ON![0m
+[0;32mI (108283) WS: Turning the LED OFF![0m
+[0;32mI (109283) WS: Turning the LED ON![0m
+[0;32mI (110283) WS: Turning the LED OFF![0m
+[0;32mI (111283) WS: Turning the LED ON![0m
+[0;32mI (112283) WS: Turning the LED OFF![0m
+[0;32mI (113283) WS: Turning the LED ON![0m
+[0;32mI (114283) WS: Turning the LED OFF![0m
+[0;32mI (115283) WS: Turning the LED ON![0m
+[0;32mI (116283) WS: Turning the LED OFF![0m
+[0;32mI (117283) WS: Turning the LED ON![0m
+[0;32mI (118283) WS: Turning the LED OFF![0m
+[0;32mI (119283) WS: Turning the LED ON![0m
+[0;32mI (120283) WS: Turning the LED OFF![0m
+[0;32mI (121283) WS: Turning the LED ON![0m
+[0;32mI (122283) WS: Turning the LED OFF![0m
+[0;32mI (123283) WS: Turning the LED ON![0m
+[0;32mI (124283) WS: Turning the LED OFF![0m
+[0;32mI (125283) WS: Turning the LED ON![0m
+[0;32mI (126283) WS: Turning the LED OFF![0m
+[0;32mI (127283) WS: Turning the LED ON![0m
+[0;32mI (128283) WS: Turning the LED OFF![0m
+[0;32mI (129283) WS: Turning the LED ON![0m
+[0;32mI (130283) WS: Turning the LED OFF![0m
+[0;32mI (131283) WS: Turning the LED ON![0m
+[0;32mI (132283) WS: Turning the LED OFF![0m
+[0;32mI (133283) WS: Turning the LED ON![0m
+[0;32mI (134283) WS: Turning the LED OFF![0m
+[0;32mI (135283) WS: Turning the LED ON![0m
+[0;32mI (136283) WS: Turning the LED OFF![0m
+[0;32mI (137283) WS: Turning the LED ON![0m
+[0;32mI (138283) WS: Turning the LED OFF![0m
+[0;32mI (139283) WS: Turning the LED ON![0m
+[0;32mI (140283) WS: Turning the LED OFF![0m
+[0;32mI (141283) WS: Turning the LED ON![0m
+[0;32mI (142283) WS: Turning the LED OFF![0m
+[0;32mI (143283) WS: Turning the LED ON![0m
+[0;32mI (144283) WS: Turning the LED OFF![0m
+[0;32mI (145283) WS: Turning the LED ON![0m
+[0;32mI (146283) WS: Turning the LED OFF![0m
+[0;32mI (147283) WS: Turning the LED ON![0m
+[0;32mI (148283) WS: Turning the LED OFF![0m
+[0;32mI (149283) WS: Turning the LED ON![0m
+[0;32mI (150283) WS: Turning the LED OFF![0m
+[0;32mI (151283) WS: Turning the LED ON![0m
+[0;32mI (152283) WS: Turning the LED OFF![0m
+[0;32mI (153283) WS: Turning the LED ON![0m
+[0;32mI (154283) WS: Turning the LED OFF![0m
+[0;32mI (155283) WS: Turning the LED ON![0m
+[0;32mI (156283) WS: Turning the LED OFF![0m
+[0;32mI (157283) WS: Turning the LED ON![0m
+[0;32mI (158283) WS: Turning the LED OFF![0m
+[0;32mI (159283) WS: Turning the LED ON![0m
+[0;32mI (160283) WS: Turning the LED OFF![0m
+[0;32mI (161283) WS: Turning the LED ON![0m
+[0;32mI (162283) WS: Turning the LED OFF![0m
+[0;32mI (163283) WS: Turning the LED ON![0m
+[0;32mI (164283) WS: Turning the LED OFF![0m
+[0;32mI (165283) WS: Turning the LED ON![0m
+[0;32mI (166283) WS: Turning the LED OFF![0m
+[0;32mI (167283) WS: Turning the LED ON![0m
+[0;32mI (168283) WS: Turning the LED OFF![0m
+[0;32mI (169283) WS: Turning the LED ON![0m
+[0;32mI (170283) WS: Turning the LED OFF![0m
+[0;32mI (171283) WS: Turning the LED ON![0m
+[0;32mI (172283) WS: Turning the LED OFF![0m
+[0;32mI (173283) WS: Turning the LED ON![0m
+[0;32mI (174283) WS: Turning the LED OFF![0m
+[0;32mI (175283) WS: Turning the LED ON![0m
+[0;32mI (176283) WS: Turning the LED OFF![0m
+[0;32mI (177283) WS: Turning the LED ON![0m
+[0;32mI (178283) WS: Turning the LED OFF![0m
+[0;32mI (179283) WS: Turning the LED ON![0m
+[0;32mI (180283) WS: Turning the LED OFF![0m
+[0;32mI (181283) WS: Turning the LED ON![0m
+[0;32mI (182283) WS: Turning the LED OFF![0m
+[0;32mI (183283) WS: Turning the LED ON![0m
+[0;32mI (184283) WS: Turning the LED OFF![0m
+[0;32mI (185283) WS: Turning the LED ON![0m
+[0;32mI (186283) WS: Turning the LED OFF![0m
+[0;32mI (187283) WS: Turning the LED ON![0m
+[0;32mI (188283) WS: Turning the LED OFF![0m
+[0;32mI (189283) WS: Turning the LED ON![0m
+[0;32mI (190283) WS: Turning the LED OFF![0m
+[0;32mI (191283) WS: Turning the LED ON![0m
+[0;32mI (192283) WS: Turning the LED OFF![0m
+[0;32mI (193283) WS: Turning the LED ON![0m
+[0;32mI (194283) WS: Turning the LED OFF![0m
+[0;32mI (195283) WS: Turning the LED ON![0m
+[0;32mI (196283) WS: Turning the LED OFF![0m
+[0;32mI (197283) WS: Turning the LED ON![0m
+[0;32mI (198283) WS: Turning the LED OFF![0m
+[0;32mI (199283) WS: Turning the LED ON![0m
+[0;32mI (200283) WS: Turning the LED OFF![0m
+[0;32mI (201283) WS: Turning the LED ON![0m
+[0;32mI (202283) WS: Turning the LED OFF![0m
+[0;32mI (203283) WS: Turning the LED ON![0m
+[0;32mI (204283) WS: Turning the LED OFF![0m
+[0;32mI (205283) WS: Turning the LED ON![0m
+[0;32mI (206283) WS: Turning the LED OFF![0m
+[0;32mI (207283) WS: Turning the LED ON![0m
+[0;32mI (208283) WS: Turning the LED OFF![0m
+[0;32mI (209283) WS: Turning the LED ON![0m
+[0;32mI (210283) WS: Turning the LED OFF![0m
+[0;32mI (211283) WS: Turning the LED ON![0m
+[0;32mI (212283) WS: Turning the LED OFF![0m
+[0;32mI (213283) WS: Turning the LED ON![0m
+[0;32mI (214283) WS: Turning the LED OFF![0m
+[0;32mI (215283) WS: Turning the LED ON![0m
+[0;32mI (216283) WS: Turning the LED OFF![0m
+[0;32mI (217283) WS: Turning the LED ON![0m
+[0;32mI (218283) WS: Turning the LED OFF![0m
+[0;32mI (219283) WS: Turning the LED ON![0m
+[0;32mI (220283) WS: Turning the LED OFF![0m
+[0;32mI (221283) WS: Turning the LED ON![0m
+[0;32mI (222283) WS: Turning the LED OFF![0m
+[0;32mI (223283) WS: Turning the LED ON![0m
+[0;32mI (224283) WS: Turning the LED OFF![0m
+[0;32mI (225283) WS: Turning the LED ON![0m
+[0;32mI (226283) WS: Turning the LED OFF![0m
+[0;32mI (227283) WS: Turning the LED ON![0m
+[0;32mI (228283) WS: Turning the LED OFF![0m
+[0;32mI (229283) WS: Turning the LED ON![0m
+[0;32mI (230283) WS: Turning the LED OFF![0m
+[0;32mI (231283) WS: Turning the LED ON![0m
+[0;32mI (232283) WS: Turning the LED OFF![0m
+[0;32mI (233283) WS: Turning the LED ON![0m
+[0;32mI (234283) WS: Turning the LED OFF![0m
+[0;32mI (235283) WS: Turning the LED ON![0m
+[0;32mI (236283) WS: Turning the LED OFF![0m
+[0;32mI (237283) WS: Turning the LED ON![0m
+[0;32mI (238283) WS: Turning the LED OFF![0m
+[0;32mI (239283) WS: Turning the LED ON![0m
+[0;32mI (240283) WS: Turning the LED OFF![0m
+[0;32mI (241283) WS: Turning the LED ON![0m
+[0;32mI (242283) WS: Turning the LED OFF![0m
+[0;32mI (243283) WS: Turning the LED ON![0m
+[0;32mI (244283) WS: Turning the LED OFF![0m
+[0;32mI (245283) WS: Turning the LED ON![0m
+[0;32mI (246283) WS: Turning the LED OFF![0m
+[0;32mI (247283) WS: Turning the LED ON![0m
+[0;32mI (248283) WS: Turning the LED OFF![0m
+[0;32mI (249283) WS: Turning the LED ON![0m
+[0;32mI (250283) WS: Turning the LED OFF![0m
+[0;32mI (251283) WS: Turning the LED ON![0m
+[0;32mI (252283) WS: Turning the LED OFF![0m
+[0;32mI (253283) WS: Turning the LED ON![0m
+[0;32mI (254283) WS: Turning the LED OFF![0m
+[0;32mI (255283) WS: Turning the LED ON![0m
+[0;32mI (256283) WS: Turning the LED OFF![0m
+[0;32mI (257283) WS: Turning the LED ON![0m
+[0;32mI (258283) WS: Turning the LED OFF![0m
+[0;32mI (259283) WS: Turning the LED ON![0m
+[0;32mI (260283) WS: Turning the LED OFF![0m
+[0;32mI (261283) WS: Turning the LED ON![0m
+[0;32mI (262283) WS: Turning the LED OFF![0m
+[0;32mI (263283) WS: Turning the LED ON![0m
+[0;32mI (264283) WS: Turning the LED OFF![0m
+[0;32mI (265283) WS: Turning the LED ON![0m
+[0;32mI (266283) WS: Turning the LED OFF![0m
+[0;32mI (267283) WS: Turning the LED ON![0m
+[0;32mI (268283) WS: Turning the LED OFF![0m
+[0;32mI (269283) WS: Turning the LED ON![0m
+[0;32mI (270283) WS: Turning the LED OFF![0m
+[0;32mI (271283) WS: Turning the LED ON![0m
+[0;32mI (272283) WS: Turning the LED OFF![0m
+[0;32mI (273283) WS: Turning the LED ON![0m
+[0;32mI (274283) WS: Turning the LED OFF![0m
+[0;32mI (275283) WS: Turning the LED ON![0m
+[0;32mI (276283) WS: Turning the LED OFF![0m
+[0;32mI (277283) WS: Turning the LED ON![0m
+[0;32mI (278283) WS: Turning the LED OFF![0m
+[0;32mI (279283) WS: Turning the LED ON![0m
+[0;32mI (280283) WS: Turning the LED OFF![0m
+[0;32mI (281283) WS: Turning the LED ON![0m
+[0;32mI (282283) WS: Turning the LED OFF![0m
+[0;32mI (283283) WS: Turning the LED ON![0m
+[0;32mI (284283) WS: Turning the LED OFF![0m
+[0;32mI (285283) WS: Turning the LED ON![0m
+[0;32mI (286283) WS: Turning the LED OFF![0m
+[0;32mI (287283) WS: Turning the LED ON![0m
+[0;32mI (288283) WS: Turning the LED OFF![0m
+[0;32mI (289283) WS: Turning the LED ON![0m
+[0;32mI (290283) WS: Turning the LED OFF![0m
+[0;32mI (291283) WS: Turning the LED ON![0m
+[0;32mI (292283) WS: Turning the LED OFF![0m
+[0;32mI (293283) WS: Turning the LED ON![0m
+[0;32mI (294283) WS: Turning the LED OFF![0m
+[0;32mI (295283) WS: Turning the LED ON![0m
+[0;32mI (296283) WS: Turning the LED OFF![0m
+[0;32mI (297283) WS: Turning the LED ON![0m
+[0;32mI (298283) WS: Turning the LED OFF![0m
+[0;32mI (299283) WS: Turning the LED ON![0m
+[0;32mI (300283) WS: Turning the LED OFF![0m
+[0;32mI (301283) WS: Turning the LED ON![0m
+[0;32mI (302283) WS: Turning the LED OFF![0m
+[0;32mI (303283) WS: Turning the LED ON![0m
+[0;32mI (304283) WS: Turning the LED OFF![0m
+[0;32mI (305283) WS: Turning the LED ON![0m
+[0;32mI (306283) WS: Turning the LED OFF![0m
+[0;32mI (307283) WS: Turning the LED ON![0m
+[0;32mI (308283) WS: Turning the LED OFF![0m
+[0;32mI (309283) WS: Turning the LED ON![0m
+[0;32mI (310283) WS: Turning the LED OFF![0m
+[0;32mI (311283) WS: Turning the LED ON![0m
+[0;32mI (312283) WS: Turning the LED OFF![0m
+[0;32mI (313283) WS: Turning the LED ON![0m
+[0;32mI (314283) WS: Turning the LED OFF![0m
+[0;32mI (315283) WS: Turning the LED ON![0m
+[0;32mI (316283) WS: Turning the LED OFF![0m
+[0;32mI (317283) WS: Turning the LED ON![0m
+[0;32mI (318283) WS: Turning the LED OFF![0m
+[0;32mI (319283) WS: Turning the LED ON![0m
+[0;32mI (320283) WS: Turning the LED OFF![0m
+[0;32mI (321283) WS: Turning the LED ON![0m
+[0;32mI (322283) WS: Turning the LED OFF![0m
+[0;32mI (323283) WS: Turning the LED ON![0m
+[0;32mI (324283) WS: Turning the LED OFF![0m
+[0;32mI (325283) WS: Turning the LED ON![0m
+[0;32mI (326283) WS: Turning the LED OFF![0m
+[0;32mI (327283) WS: Turning the LED ON![0m
+[0;32mI (328283) WS: Turning the LED OFF![0m
+[0;32mI (329283) WS: Turning the LED ON![0m
+[0;32mI (330283) WS: Turning the LED OFF![0m
+[0;32mI (331283) WS: Turning the LED ON![0m
+[0;32mI (332283) WS: Turning the LED OFF![0m
+[0;32mI (333283) WS: Turning the LED ON![0m
+[0;32mI (334283) WS: Turning the LED OFF![0m
+[0;32mI (335283) WS: Turning the LED ON![0m
+[0;32mI (336283) WS: Turning the LED OFF![0m
+[0;32mI (337283) WS: Turning the LED ON![0m
+[0;32mI (338283) WS: Turning the LED OFF![0m
+[0;32mI (339283) WS: Turning the LED ON![0m
+[0;32mI (340283) WS: Turning the LED OFF![0m
+[0;32mI (341283) WS: Turning the LED ON![0m
+[0;32mI (342283) WS: Turning the LED OFF![0m
+[0;32mI (343283) WS: Turning the LED ON![0m
+[0;32mI (344283) WS: Turning the LED OFF![0m
+[0;32mI (345283) WS: Turning the LED ON![0m
+[0;32mI (346283) WS: Turning the LED OFF![0m
+[0;32mI (347283) WS: Turning the LED ON![0m
+[0;32mI (348283) WS: Turning the LED OFF![0m
+[0;32mI (349283) WS: Turning the LED ON![0m
+[0;32mI (350283) WS: Turning the LED OFF![0m
+[0;32mI (351283) WS: Turning the LED ON![0m
+[0;32mI (352283) WS: Turning the LED OFF![0m
+[0;32mI (353283) WS: Turning the LED ON![0m
+[0;32mI (354283) WS: Turning the LED OFF![0m
+[0;32mI (355283) WS: Turning the LED ON![0m
+[0;32mI (356283) WS: Turning the LED OFF![0m
+[0;32mI (357283) WS: Turning the LED ON![0m
+[0;32mI (358283) WS: Turning the LED OFF![0m
+[0;32mI (359283) WS: Turning the LED ON![0m
+[0;32mI (360283) WS: Turning the LED OFF![0m
+[0;32mI (361283) WS: Turning the LED ON![0m
+[0;32mI (362283) WS: Turning the LED OFF![0m
+[0;32mI (363283) WS: Turning the LED ON![0m
+[0;32mI (364283) WS: Turning the LED OFF![0m
+[0;32mI (365283) WS: Turning the LED ON![0m
+[0;32mI (366283) WS: Turning the LED OFF![0m
+[0;32mI (367283) WS: Turning the LED ON![0m
+[0;32mI (368283) WS: Turning the LED OFF![0m
+[0;32mI (369283) WS: Turning the LED ON![0m
+[0;32mI (370283) WS: Turning the LED OFF![0m
+[0;32mI (371283) WS: Turning the LED ON![0m
+[0;32mI (372283) WS: Turning the LED OFF![0m
+[0;32mI (373283) WS: Turning the LED ON![0m
+[0;32mI (374283) WS: Turning the LED OFF![0m
+[0;32mI (375283) WS: Turning the LED ON![0m
+[0;32mI (376283) WS: Turning the LED OFF![0m
+[0;32mI (377283) WS: Turning the LED ON![0m
+[0;32mI (378283) WS: Turning the LED OFF![0m
+[0;32mI (379283) WS: Turning the LED ON![0m
+[0;32mI (380283) WS: Turning the LED OFF![0m
+[0;32mI (381283) WS: Turning the LED ON![0m
+[0;32mI (382283) WS: Turning the LED OFF![0m
+[0;32mI (383283) WS: Turning the LED ON![0m
+[0;32mI (384283) WS: Turning the LED OFF![0m
+[0;32mI (385283) WS: Turning the LED ON![0m
+[0;32mI (386283) WS: Turning the LED OFF![0m
+[0;32mI (387283) WS: Turning the LED ON![0m
+[0;32mI (388283) WS: Turning the LED OFF![0m
+[0;32mI (389283) WS: Turning the LED ON![0m
+[0;32mI (390283) WS: Turning the LED OFF![0m
+[0;32mI (391283) WS: Turning the LED ON![0m
+[0;32mI (392283) WS: Turning the LED OFF![0m
+[0;32mI (393283) WS: Turning the LED ON![0m
+[0;32mI (394283) WS: Turning the LED OFF![0m
+[0;32mI (395283) WS: Turning the LED ON![0m
+[0;32mI (396283) WS: Turning the LED OFF![0m
+[0;32mI (397283) WS: Turning the LED ON![0m
+[0;32mI (398283) WS: Turning the LED OFF![0m
+[0;32mI (399283) WS: Turning the LED ON![0m
+[0;32mI (400283) WS: Turning the LED OFF![0m
+[0;32mI (401283) WS: Turning the LED ON![0m
+[0;32mI (402283) WS: Turning the LED OFF![0m
+[0;32mI (403283) WS: Turning the LED ON![0m
+[0;32mI (404283) WS: Turning the LED OFF![0m
+[0;32mI (405283) WS: Turning the LED ON![0m
+[0;32mI (406283) WS: Turning the LED OFF![0m
+[0;32mI (407283) WS: Turning the LED ON![0m
+[0;32mI (408283) WS: Turning the LED OFF![0m
+[0;32mI (409283) WS: Turning the LED ON![0m
+[0;32mI (410283) WS: Turning the LED OFF![0m
+[0;32mI (411283) WS: Turning the LED ON![0m
+[0;32mI (412283) WS: Turning the LED OFF![0m
+[0;32mI (413283) WS: Turning the LED ON![0m
+[0;32mI (414283) WS: Turning the LED OFF![0m
+[0;32mI (415283) WS: Turning the LED ON![0m
+[0;32mI (416283) WS: Turning the LED OFF![0m
+[0;32mI (417283) WS: Turning the LED ON![0m
+[0;32mI (418283) WS: Turning the LED OFF![0m
+[0;32mI (419283) WS: Turning the LED ON![0m
+[0;32mI (420283) WS: Turning the LED OFF![0m
+[0;32mI (421283) WS: Turning the LED ON![0m
+[0;32mI (422283) WS: Turning the LED OFF![0m
+[0;32mI (423283) WS: Turning the LED ON![0m
+[0;32mI (424283) WS: Turning the LED OFF![0m
+[0;32mI (425283) WS: Turning the LED ON![0m
+[0;32mI (426283) WS: Turning the LED OFF![0m
+[0;32mI (427283) WS: Turning the LED ON![0m
+[0;32mI (428283) WS: Turning the LED OFF![0m
+[0;32mI (429283) WS: Turning the LED ON![0m
+[0;32mI (430283) WS: Turning the LED OFF![0m
+[0;32mI (431283) WS: Turning the LED ON![0m
+[0;32mI (432283) WS: Turning the LED OFF![0m
+[0;32mI (433283) WS: Turning the LED ON![0m
+[0;32mI (434283) WS: Turning the LED OFF![0m
+[0;32mI (435283) WS: Turning the LED ON![0m
+[0;32mI (436283) WS: Turning the LED OFF![0m
+[0;32mI (437283) WS: Turning the LED ON![0m
+[0;32mI (438283) WS: Turning the LED OFF![0m
+[0;32mI (439283) WS: Turning the LED ON![0m
+[0;32mI (440283) WS: Turning the LED OFF![0m
+[0;32mI (441283) WS: Turning the LED ON![0m
+[0;32mI (442283) WS: Turning the LED OFF![0m
+[0;32mI (443283) WS: Turning the LED ON![0m
+[0;32mI (444283) WS: Turning the LED OFF![0m
+[0;32mI (445283) WS: Turning the L
