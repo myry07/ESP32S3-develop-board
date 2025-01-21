@@ -83,4 +83,5 @@
 /Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/04_Button/build/esp-idf/touch_element/libtouch_element.a
 /Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/04_Button/build/esp-idf/usb/libusb.a
 /Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/04_Button/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/04_Button/build/esp-idf/espressif__button/libespressif__button.a
 /Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/04_Button/build/esp-idf/main/libmain.a

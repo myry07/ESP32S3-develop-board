@@ -1,51 +1,55 @@
 #include <stdio.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "driver/gpio.h"
 #include "esp_log.h"
+#include "iot_button.h"
+#include "driver/gpio.h" //操作gpio的头文件
 
-#define Button_GPIO GPIO_NUM_0
-#define TAG "app"
+#define BOOT_BUTTON_NUM 0
 
-void gpioInit()
+static const char *TAG = "button_power_save";
+
+static void button_event_cb(void *arg, void *data)
 {
-    gpio_config_t led_cfg = {
-        .pin_bit_mask = (1 << Button_GPIO), // 按位掩码 可控制多个gpio
-        .pull_down_en = GPIO_PULLDOWN_DISABLE,
-        .pull_up_en = GPIO_PULLUP_ENABLE,
-        .mode = GPIO_MODE_INPUT,        // 输入模式
-        .intr_type = GPIO_INTR_DISABLE, // 中断
-    };
-
-    if (gpio_config(&led_cfg) != NULL)
-    {
-        ESP_LOGI(TAG, "GPIO Init");
-    };
+    iot_button_print_event((button_handle_t)arg);
 }
 
-void buttonTask(void *param)
+void button_init(uint32_t button_num)
 {
-    gpioInit();
+    gpio_config_t gpio_cfg = {
+        .pin_bit_mask = (1 << button_num),    // 按位掩码 可控制多个gpio
+        .pull_up_en = GPIO_PULLUP_DISABLE,    // 使能上拉
+        .pull_down_en = GPIO_PULLDOWN_ENABLE, // 使能下拉
+        .mode = GPIO_MODE_INPUT,              
+        .intr_type = GPIO_INTR_DISABLE,       // 中断
+    };
 
-    while (1)
-    {
-        if (0 == gpio_get_level(Button_GPIO))
-        {
+    gpio_config(&gpio_cfg);
 
-            /* 软件去抖 */
-            while (0 == gpio_get_level(Button_GPIO))
-            {
-                vTaskDelay(pdMS_TO_TICKS(20));
-            }
+    button_config_t btn_cfg = {
+        .type = BUTTON_TYPE_GPIO,
+        .gpio_button_config = {
+            .gpio_num = button_num,
+            .active_level = 0,
+        },
+    };
+    button_handle_t btn = iot_button_create(&btn_cfg);
+    assert(btn);
+    esp_err_t err = iot_button_register_cb(btn, BUTTON_PRESS_DOWN, button_event_cb, NULL);
+    err |= iot_button_register_cb(btn, BUTTON_PRESS_UP, button_event_cb, NULL);
+    err |= iot_button_register_cb(btn, BUTTON_PRESS_REPEAT, button_event_cb, NULL);
+    err |= iot_button_register_cb(btn, BUTTON_PRESS_REPEAT_DONE, button_event_cb, NULL);
+    err |= iot_button_register_cb(btn, BUTTON_SINGLE_CLICK, button_event_cb, NULL);
+    err |= iot_button_register_cb(btn, BUTTON_DOUBLE_CLICK, button_event_cb, NULL);
+    err |= iot_button_register_cb(btn, BUTTON_LONG_PRESS_START, button_event_cb, NULL);
+    // err |= iot_button_register_cb(btn, BUTTON_LONG_PRESS_HOLD, button_event_cb, NULL);
+    err |= iot_button_register_cb(btn, BUTTON_LONG_PRESS_UP, button_event_cb, NULL);
+    err |= iot_button_register_cb(btn, BUTTON_PRESS_END, button_event_cb, NULL);
 
-            ESP_LOGI(TAG, "Key pressed");
-        }
-
-        vTaskDelay(pdMS_TO_TICKS(20));
-    }
+    ESP_ERROR_CHECK(err);
 }
 
 void app_main(void)
 {
-    xTaskCreate(buttonTask, "button", NULL, 1024 * 2, 0, NULL);
+    button_init(BOOT_BUTTON_NUM);
 }

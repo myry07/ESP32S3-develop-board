@@ -554,6 +554,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/04_Button/build/esp-idf/espressif__cmake_utilities/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/04_Button/build/esp-idf/espressif__button/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/myry/Documents/Github/esp32s3-develop-board/02.Software/02_ESP-IDF/04_Button/build/esp-idf/main/cmake_install.cmake")
 endif()
 

@@ -29,9 +29,6 @@ void ledFlash(void *param)
 
 void app_main(void)
 {
-
-    // 设置日志级别为 INFO
-    esp_log_level_set("*", ESP_LOG_INFO);
     
     // GPIO配置
     gpio_config_t led_cfg = {
