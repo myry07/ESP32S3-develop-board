@@ -1,0 +1,172 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x38 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2ee4
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jan 24 2025 22:08:15[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a278h ( 41592) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=0001a2a0 vaddr=3fc92300 size=02a20h ( 10784) load[0m
+[0;32mI (98) esp_image: segment 2: paddr=0001ccc8 vaddr=40374000 size=03350h ( 13136) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=17804h ( 96260) map[0m
+[0;32mI (128) esp_image: segment 4: paddr=0003782c vaddr=40377350 size=0aeb0h ( 44720) load[0m
+[0;32mI (138) esp_image: segment 5: paddr=000426e4 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (143) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (144) boot: Disabling RNG early entropy source...[0m
+[0;32mI (155) cpu_start: Multicore app[0m
+[0;32mI (164) cpu_start: Pro cpu start user code[0m
+[0;32mI (165) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (165) app_init: Application information:[0m
+[0;32mI (165) app_init: Project name:     01_Queue[0m
+[0;32mI (169) app_init: App version:      b75c8ca-dirty[0m
+[0;32mI (173) app_init: Compile time:     Jan 24 2025 22:08:09[0m
+[0;32mI (178) app_init: ELF file SHA256:  66801d867...[0m
+[0;32mI (182) app_init: ESP-IDF:          v5.4[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 3FC955E0 len 00054130 (336 KiB): RAM[0m
+[0;32mI (209) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (214) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (219) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (226) spi_flash: detected chip: boya[0m
+[0;32mI (228) spi_flash: flash io: dio[0m
+[0;33mW (231) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (244) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (250) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (257) main_task: Started on CPU0[0m
+[0;32mI (277) main_task: Calling app_main()[0m
+[0;32mI (277) sendTask: sent[0m
+[0;32mI (277) main_task: Returned from app_main()[0m
+[0;32mI (277) receiveTask:: value: 0[0m
+[0;32mI (2277) sendTask: sent[0m
+[0;32mI (2277) receiveTask:: value: 1[0m
+[0;32mI (4277) sendTask: sent[0m
+[0;32mI (4277) receiveTask:: value: 2[0m
+[0;32mI (6277) sendTask: sent[0m
+[0;32mI (6277) receiveTask:: value: 3[0m
+[0;32mI (8277) sendTask: sent[0m
+[0;32mI (8277) receiveTask:: value: 4[0m
+[0;32mI (10277) sendTask: sent[0m
+[0;32mI (10277) receiveTask:: value: 5[0m
+[0;32mI (12277) sendTask: sent[0m
+[0;32mI (12277) receiveTask:: value: 6[0m
+[0;32mI (14277) sendTask: sent[0m
+[0;32mI (14277) receiveTask:: value: 7[0m
+[0;32mI (16277) sendTask: sent[0m
+[0;32mI (16277) receiveTask:: value: 8[0m
+[0;32mI (18277) sendTask: sent[0m
+[0;32mI (18277) receiveTask:: value: 9[0m
+[0;32mI (20277) sendTask: sent[0m
+[0;32mI (20277) receiveTask:: value: 10[0m
+[0;32mI (22277) sendTask: sent[0m
+[0;32mI (22277) receiveTask:: value: 11[0m
+[0;32mI (24277) sendTask: sent[0m
+[0;32mI (24277) receiveTask:: value: 12[0m
+[0;32mI (26277) sendTask: sent[0m
+[0;32mI (26277) receiveTask:: value: 13[0m
+[0;32mI (28277) sendTask: sent[0m
+[0;32mI (28277) receiveTask:: value: 14[0m
+[0;32mI (30277) sendTask: sent[0m
+[0;32mI (30277) receiveTask:: value: 15[0m
+[0;32mI (32277) sendTask: sent[0m
+[0;32mI (32277) receiveTask:: value: 16[0m
+[0;32mI (34277) sendTask: sent[0m
+[0;32mI (34277) receiveTask:: value: 17[0m
+[0;32mI (36277) sendTask: sent[0m
+[0;32mI (36277) receiveTask:: value: 18[0m
+[0;32mI (38277) sendTask: sent[0m
+[0;32mI (38277) receiveTask:: value: 19[0m
+[0;32mI (40277) sendTask: sent[0m
+[0;32mI (40277) receiveTask:: value: 20[0m
+[0;32mI (42277) sendTask: sent[0m
+[0;32mI (42277) receiveTask:: value: 21[0m
+[0;32mI (44277) sendTask: sent[0m
+[0;32mI (44277) receiveTask:: value: 22[0m
+[0;32mI (46277) sendTask: sent[0m
+[0;32mI (46277) receiveTask:: value: 23[0m
+[0;32mI (48277) sendTask: sent[0m
+[0;32mI (48277) receiveTask:: value: 24[0m
+[0;32mI (50277) sendTask: sent[0m
+[0;32mI (50277) receiveTask:: value: 25[0m
+[0;32mI (52277) sendTask: sent[0m
+[0;32mI (52277) receiveTask:: value: 26[0m
+[0;32mI (54277) sendTask: sent[0m
+[0;32mI (54277) receiveTask:: value: 27[0m
+[0;32mI (56277) sendTask: sent[0m
+[0;32mI (56277) receiveTask:: value: 28[0m
+[0;32mI (58277) sendTask: sent[0m
+[0;32mI (58277) receiveTask:: value: 29[0m
+[0;32mI (60277) sendTask: sent[0m
+[0;32mI (60277) receiveTask:: value: 30[0m
+[0;32mI (62277) sendTask: sent[0m
+[0;32mI (62277) receiveTask:: value: 31[0m
+[0;32mI (64277) sendTask: sent[0m
+[0;32mI (64277) receiveTask:: value: 32[0m
+[0;32mI (66277) sendTask: sent[0m
+[0;32mI (66277) receiveTask:: value: 33[0m
+[0;32mI (68277) sendTask: sent[0m
+[0;32mI (68277) receiveTask:: value: 34[0m
+[0;32mI (70277) sendTask: sent[0m
+[0;32mI (70277) receiveTask:: value: 35[0m
+[0;32mI (72277) sendTask: sent[0m
+[0;32mI (72277) receiveTask:: value: 36[0m
+[0;32mI (74277) sendTask: sent[0m
+[0;32mI (74277) receiveTask:: value: 37[0m
+[0;32mI (76277) sendTask: sent[0m
+[0;32mI (76277) receiveTask:: value: 38[0m
+[0;32mI (78277) sendTask: sent[0m
+[0;32mI (78277) receiveTask:: value: 39[0m
+[0;32mI (80277) sendTask: sent[0m
+[0;32mI (80277) receiveTask:: value: 40[0m
+[0;32mI (82277) sendTask: sent[0m
+[0;32mI (82277) receiveTask:: value: 41[0m
+[0;32mI (84277) sendTask: sent[0m
+[0;32mI (84277) receiveTask:: value: 42[0m
+[0;32mI (86277) sendTask: sent[0m
+[0;32mI (86277) receiveTask:: value: 43[0m
+[0;32mI (88277) sendTask: sent[0m
+[0;32mI (88277) receiveTask:: value: 44[0m
+[0;32mI (90277) sendTask: sent[0m
+[0;32mI (90277) receiveTask:: value: 45[0m
+[0;32mI (92277) sendTask: sent[0m
+[0;32mI (92277) receiveTask:: value: 46[0m
+[0;32mI (94277) sendTask: sent[0m
+[0;32mI (94277) receiveTask:: value: 47[0m
+[0;32mI (96277) sendTask: sent[0m
+[0;32mI (96277) receiveTask:: value: 48[0m
+[0;32mI (98277) sendTask: sent[0m
+[0;32mI (98277) receiveTask:: value: 49[0m
+[0;32mI (100277) sendTask: sent[0m
+[0;32mI (100277) receiveTask:: value: 50[0m
+[0;32mI (102277) sendTask: sent[0m
+[0;32mI (102277) receiveTask:: value: 51[0m
+[0;32mI (104277) sendTask: sent[0m
+[0;32mI (104277) receiveTask:: value: 52[0m
+[0;32mI (106277) sendTask: sent[0m
+[0;32mI (106277) receiveTask:: value: 53[0m
+[0;32mI (108277) sendTask: sent[0m
+[0;32mI (108277) receiveTask:: value: 54[0m
+[0;32mI (110277) sendTask: sent[0m
+[0;32mI (110277) receiveTask:: value: 55[0m
+[0;32mI (112277) sendTask: sent[0m
+[0;32mI
