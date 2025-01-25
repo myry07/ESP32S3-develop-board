@@ -3,5 +3,8 @@
   "idf.openOcdConfigs": [
     "board/esp32s3-builtin.cfg"
   ],
-  "idf.port": "/dev/tty.wchusbserial1130"
+  "idf.port": "/dev/tty.wchusbserial1130",
+  "files.associations": {
+    "cstring": "cpp"
+  }
 }
