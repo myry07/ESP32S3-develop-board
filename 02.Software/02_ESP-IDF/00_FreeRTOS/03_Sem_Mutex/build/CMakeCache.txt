@@ -27,18 +27,18 @@
 CCACHE_ENABLE:UNINITIALIZED=0
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-addr2line
+CMAKE_ADDR2LINE:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-addr2line
 
 //Path to a program.
-CMAKE_AR:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-ar
+CMAKE_AR:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-ar
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_AR:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar
+CMAKE_ASM_COMPILER_AR:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc-ranlib
 
 //ASM Compiler Base Flags
 CMAKE_ASM_FLAGS:STRING='-mlongcalls '
@@ -61,14 +61,14 @@ CMAKE_BUILD_TYPE:STRING=
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_AR:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar
+CMAKE_CXX_COMPILER_AR:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc-ranlib
 
 //C++ Compiler Base Flags
-CMAKE_CXX_FLAGS:STRING=-mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy
+CMAKE_CXX_FLAGS:STRING=-mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy
 
 //Flags used by the CXX compiler during DEBUG builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -84,14 +84,14 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_AR:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ar
+CMAKE_C_COMPILER_AR:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc-ar
 
 //A wrapper around 'ranlib' adding the appropriate '--plugin' option
 // for the GCC compiler
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc-ranlib
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc-ranlib
 
 //C Compiler Base Flags
-CMAKE_C_FLAGS:STRING=-mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy
+CMAKE_C_FLAGS:STRING=-mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy
 
 //Flags used by the C compiler during DEBUG builds.
 CMAKE_C_FLAGS_DEBUG:STRING=-g
@@ -184,7 +184,7 @@ CMAKE_INSTALL_SHAREDSTATEDIR:PATH=com
 CMAKE_INSTALL_SYSCONFDIR:PATH=etc
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-ld
+CMAKE_LINKER:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-ld
 
 //Program used to build from build.ninja files.
 CMAKE_MAKE_PROGRAM:FILEPATH=/opt/homebrew/bin/ninja
@@ -210,13 +210,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-nm
+CMAKE_NM:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-objcopy
+CMAKE_OBJCOPY:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump
+CMAKE_OBJDUMP:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-objdump
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -243,10 +243,10 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=2
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-ranlib
+CMAKE_RANLIB:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-readelf
+CMAKE_READELF:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-readelf
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -296,13 +296,13 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-strip
+CMAKE_STRIP:FILEPATH=/Users/myry/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-strip
 
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
 //The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/Users/myry/esp/esp-idf/tools/cmake/toolchain-esp32.cmake
+CMAKE_TOOLCHAIN_FILE:FILEPATH=/Users/myry/esp/esp-idf/tools/cmake/toolchain-esp32s3.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -329,7 +329,7 @@ GEN_FILES:BOOL=
 GIT_EXECUTABLE:FILEPATH=/opt/homebrew/bin/git
 
 //IDF Build Target
-IDF_TARGET:STRING=esp32
+IDF_TARGET:STRING=esp32s3
 
 //IDF Build Toolchain Type
 IDF_TOOLCHAIN:STRING=gcc
@@ -362,7 +362,7 @@ Mbed TLS_IS_TOP_LEVEL:STATIC=OFF
 Mbed TLS_SOURCE_DIR:STATIC=/Users/myry/esp/esp-idf/components/mbedtls/mbedtls
 
 //No help, variable specified on the command line.
-PYTHON:UNINITIALIZED=/Users/myry/.espressif/python_env/idf5.4_py3.11_env/bin/python
+PYTHON:UNINITIALIZED=/Users/myry/.espressif/python_env/idf5.4_py3.13_env/bin/python
 
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
@@ -389,7 +389,7 @@ esp-idf_SOURCE_DIR:STATIC=/Users/myry/esp/esp-idf
 everest_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;
 
 //Dependencies for the target
-mbedcrypto_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;general;everest;general;p256m;general;idf::esp_security;
+mbedcrypto_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;general;everest;general;p256m;general;idf::esp_security;general;idf::esp_mm;
 
 //Dependencies for the target
 mbedtls_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_esp_hw_support;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_hal;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp_system;general;__idf_xtensa;general;mbedx509;
@@ -550,7 +550,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=117
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=118
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -600,7 +600,7 @@ C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/opt/homebrew/bin/git][v2.47.1()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/myry/.espressif/python_env/idf5.4_py3.11_env/bin/python][cfound components: Interpreter ][v3.11.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/Users/myry/.espressif/python_env/idf5.4_py3.13_env/bin/python][cfound components: Interpreter ][v3.13.1()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
@@ -611,10 +611,10 @@ _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 _Python3_Compiler_REASON_FAILURE:INTERNAL=
 //Development reason failure
 _Python3_Development_REASON_FAILURE:INTERNAL=
-_Python3_EXECUTABLE:INTERNAL=/Users/myry/.espressif/python_env/idf5.4_py3.11_env/bin/python
+_Python3_EXECUTABLE:INTERNAL=/Users/myry/.espressif/python_env/idf5.4_py3.13_env/bin/python
 //Python3 Properties
-_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;11;5;32;64;;;abi3;/Users/myry/anaconda3/lib/python3.11;/Users/myry/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11;/Users/myry/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages;/Users/myry/.espressif/python_env/idf5.4_py3.11_env/lib/python3.11/site-packages
-_Python3_INTERPRETER_SIGNATURE:INTERNAL=b821eea2d1e15a90952b0641508f1974
+_Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;13;1;32;64;;;abi3;/opt/homebrew/opt/python@3.13/Frameworks/Python.framework/Versions/3.13/lib/python3.13;/Users/myry/.espressif/python_env/idf5.4_py3.13_env/lib/python3.13;/Users/myry/.espressif/python_env/idf5.4_py3.13_env/lib/python3.13/site-packages;/Users/myry/.espressif/python_env/idf5.4_py3.13_env/lib/python3.13/site-packages
+_Python3_INTERPRETER_SIGNATURE:INTERNAL=088e648f9285b821521cfd6312b8c1d9
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
 
