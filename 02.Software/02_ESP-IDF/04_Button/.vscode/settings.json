@@ -3,6 +3,6 @@
   "idf.openOcdConfigs": [
     "board/esp32s3-builtin.cfg"
   ],
-  "idf.port": "/dev/tty.wchusbserial110",
+  "idf.port": "/dev/tty.wchusbserial10",
   "idf.flashType": "JTAG"
 }
